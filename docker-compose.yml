@@ -1,5 +1,0 @@
-services:
-  appium:
-    image: appium/appium:latest
-    ports:
-      - "4723:4723"
