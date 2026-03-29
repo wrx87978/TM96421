@@ -1,0 +1,4 @@
+Test Execution Log:
+KROK 1: SUKCES: Odnaleziono naglowek strony (ID: title). Status: Widoczny.
+KROK 2: SUKCES: Wykonano klikniecie w element UI o ID: 'add'
+KROK 3: SUKCES: Wpisano 'Automatyzacja Mobilna' do pola search_button i zatwierdzono.
