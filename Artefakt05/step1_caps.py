@@ -2,11 +2,11 @@ import json
 import os
 
 def solve_task():
-    # Dane wyciągnięte z przykładu prowadzącego (Twoje pierwsze zdjęcie)
+
     package = "io.appium.android.apis"
     main_activity = "io.appium.android.apis.ApiDemos"
 
-    # Przygotowanie słownika capabilities dokładnie tak jak w zadaniu
+
     capabilities = {
         "platformName": "Android",
         "automationName": "UiAutomator2",
@@ -16,12 +16,12 @@ def solve_task():
         "noReset": True
     }
 
-    # Zapis do pliku JSON w folderze Artefakt05
+
     try:
         with open('51_caps.json', 'w') as json_file:
             json.dump(capabilities, json_file, indent=4)
         
-        # Ten napis jest KLUCZOWY do Twojego screenshotu
+
         print(f"Sukces! Wykryto: {package} / {main_activity}")
     except Exception as e:
         print(f"Błąd zapisu: {e}")
