@@ -8,10 +8,9 @@ class MainPage(BasePage):
         print("-" * 30)
 
     def click_add_button(self):
-        # Szukamy selektora (nasza baza juz umie szukac ADD i add)
-        selector = self.get_selector("ADD")
         
-        # Jesli baza zwrocila "Nie znaleziono", wymuszamy 'add' dla screena
+        selector = self.get_selector("ADD")
+       
         if selector == "Nie znaleziono" or selector == "Brak":
             selector = "add"
             
