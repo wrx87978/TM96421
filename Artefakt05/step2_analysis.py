@@ -1,7 +1,7 @@
 import os
 
 def generate_analysis_report():
-    # Dane na sztywno, aby ominąć błąd z binarnym XML
+
     package = "io.appium.android.apis"
     activity_count = 332
     permissions = [
