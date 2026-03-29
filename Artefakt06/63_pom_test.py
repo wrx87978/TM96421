@@ -3,7 +3,7 @@ from MainPage import MainPage
 def run_pom_test():
     print(">>> ZADANIE 6.3: URUCHAMIANIE TESTU W ARCHITEKTURZE POM <<<")
     
-    # Inicjalizacja strony (to wywola komunikaty z BasePage i MainPage)
+   
     page = MainPage()
     
     print("\n--- PRZEBIEG SCENARIUSZA TESTOWEGO ---")
@@ -14,7 +14,7 @@ def run_pom_test():
     
     # KROK 2
     selector = page.get_selector("ADD")
-    if selector == "Nie znaleziono": selector = "add" # Poprawka dla spojnosci
+    if selector == "Nie znaleziono": selector = "add"
     step2 = f"KROK 2: SUKCES: Wykonano klikniecie w element UI o ID: '{selector}'"
     print(step2)
     
@@ -22,7 +22,7 @@ def run_pom_test():
     step3 = "KROK 3: SUKCES: Wpisano 'Automatyzacja Mobilna' do pola search_button i zatwierdzono."
     print(step3)
     
-    # Zapisywanie logu audytu (wymagane do kroku 6.4)
+  
     with open("64_pom_audit.log", "w") as f:
         f.write(f"Test Execution Log:\n{step1}\n{step2}\n{step3}")
         
