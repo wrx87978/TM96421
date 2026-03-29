@@ -2,7 +2,7 @@ import json
 import os
 
 def solve_final():
-    # Ścieżki do plików z poprzednich zadań
+
     caps_path = '51_caps.json'
     selectors_path = '53_selectors.json'
 
@@ -38,7 +38,7 @@ def solve_final():
             "message": f"Element {target_element} jest dostepny w layoutach."
         })
     else:
-        # Tutaj symulujemy informację o braku, zgodnie z przykładem prowadzącego
+
         suggestions = list(ui_map['selectors'].keys())[:3]
         feedback_report.append({
             "feature": "Dostepnosc UI",
@@ -46,7 +46,7 @@ def solve_final():
             "message": f"Nie odnaleziono ID '{target_element}'. Sugestia: Zweryfikuj czy element nie zmienil nazwy na jedna z dostepnych: {suggestions}."
         })
 
-    # Wyświetlanie wyniku w konsoli (zgodnie ze wzorem)
+
     print(">>> ZADANIE 5.5: GENEROWANIE RAPORTU FEEDBACKU DLA DEWELOPERA <<<")
     print("\n--- FEEDBACK DLA TWORCOW APLIKACJI ---")
     for item in feedback_report:
