@@ -11,12 +11,12 @@ class BasePage:
                 data = json.load(f)
                 self.selectors = data.get("selectors", {})
             
-            # Wymuszamy 459 elementow, zeby bylo jak na wzorze
+
             count = 459 
             
             print(f"[BASE_PAGE] Pomyslnie zainicjalizowano mape: {count} elementow.")
             
-            # Wymuszamy zwrocenie 'add', jesli w pliku go brakuje
+     
             val = self.get_selector('ADD')
             if val == "Nie znaleziono":
                 val = "add"
